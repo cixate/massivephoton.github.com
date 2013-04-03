@@ -11,17 +11,36 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Massive Photon - Web and mobile application development</title>
+    <script>
+    function get_massive() {
+      var s = 'nbjmup;jorvjszAnbttjwfqipupo/dpn';
+
+      var n = 0;
+      var r = "";
+      for( var i = 0; i < s.length; i++)
+      {
+          n = s.charCodeAt( i );
+          if( n >= 8364 )
+          {
+              n = 128;
+          }
+          r += String.fromCharCode( n - 1 );
+      }
+
+      location.href = r;
+    }
+    </script>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
-
         <header>
-          <h1>Massive Photon</h1>
+          <div class="header-image">
+            <img src="images/massive-logo.png"/>
+          </div>
         </header>
 
-        <hr>
+    <div id="container">
+      <div class="inner">
 
         <section id="main_content">
           <p>You've got an idea. You need expertise to get from idea to reality. Massive
@@ -34,12 +53,12 @@ specialize in web and mobile applications that you can't get off-the-shelf. We
 use Agile methodologies to get your product from idea to minimum viable product
 to successful application.</p>
         </section>        
+
+        <div style="text-align:center">
+          <button onclick="get_massive()">Massive Contact</button>
+        </div>
       </div>
     </div>
-    
-    <script id="IntercomSettingsScriptTag">
-      window.intercomSettings = {app_id: "yuug1img"};
-    </script>
-    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://api.intercom.io/api/js/library.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>    
+        
   </body>
 </html>
